@@ -1,4 +1,4 @@
-# Build a Qusetion Answering Engine
+# Build a Question Answering Engine
 
 [link] <https://github.com/towhee-io/examples/blob/main/nlp/question_answering/1_build_question_answering_engine.ipynb>
 
