@@ -8,8 +8,8 @@ def create_milvus_collection(collection_name, dim):
         utility.drop_collection(collection_name)
     
     fields = [
-    FieldSchema(name='id', dtype=DataType.VARCHAR, descrition='ids', max_length=500, is_primary=True, auto_id=False),
-    FieldSchema(name='embedding', dtype=DataType.FLOAT_VECTOR, descrition='embedding vectors', dim=dim)
+    FieldSchema(name='id', dtype=DataType.VARCHAR, description='ids', max_length=500, is_primary=True, auto_id=False),
+    FieldSchema(name='embedding', dtype=DataType.FLOAT_VECTOR, description='embedding vectors', dim=dim)
     ]
     schema = CollectionSchema(fields=fields, description='Question Answering System')
     collection = Collection(name=collection_name, schema=schema)
@@ -25,3 +25,4 @@ def create_milvus_collection(collection_name, dim):
 
 collection = create_milvus_collection(mvar.get_collection_name(), mvar.get_collection_dim())
 print('Total number of inserted data is {}.'.format(collection.num_entities))
+
