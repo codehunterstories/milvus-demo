@@ -24,4 +24,4 @@ def create_milvus_collection(collection_name, dim):
     return collection
 
 collection = create_milvus_collection(mvar.get_collection_name(), mvar.get_collection_dim())
-print('Total number of inserted data is {}.'.format(collection.num_entities))
+print('Collection created. Current entity count: {}.'.format(collection.num_entities))
